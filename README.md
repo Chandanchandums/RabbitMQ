@@ -23,10 +23,10 @@ docker network inspect rabbitnet -f '{{range .IPAM.Config}}{{.Gateway}}{{end}}'
 3. docker-compose up --build
 
 4. 
-http://localhost:5000/insert_record/PES1/Test1/A
-http://localhost:5000/delete_record?SRN=PES1
-http://localhost:5000/read_database
-http://localhost:5000/health_check?message=hi
+- http://localhost:5000/insert_record/PES1/Test1/A
+- http://localhost:5000/delete_record?SRN=PES1
+- http://localhost:5000/read_database
+- http://localhost:5000/health_check?message=hi
 
 5. On MongoDB Compass you can connect to DB using this connection string
 "mongodb://root:cc_project@localhost:27018/"  if it is the cloud databse 
